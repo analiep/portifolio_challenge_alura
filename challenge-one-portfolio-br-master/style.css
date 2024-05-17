@@ -1,0 +1,463 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #1f1e24;
+   --cor-de-link: hsl(0, 45%, 98%);
+}
+
+/*Sessão Menu*/
+
+section.menu{
+    display: flexbox;
+    align-items: center;
+
+}
+.menu__list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fdfbfb;
+    gap: -10px;
+    margin-top: 5px;
+}
+
+/* Analie Peigrinelli */
+
+.menu__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 70px;
+    margin-top: 20px;
+    text-shadow: -6px 2px 5px rgba(103, 58, 183, 0.7); /* Sombra roxa que vai da direita para a esquerda */
+}
+
+/* Menu superior */
+.menu__list {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    list-style: none; /* Remover marcadores padrão de lista */
+    padding: 0; /* Remover preenchimento padrão da lista */
+    margin: -30px 0 0 10px; /* Ajusta a margem superior */
+}
+
+.menu__list__item {
+    padding: 10px 20px; /* Espaçamento interno */
+    margin: 0 5px; /* Espaçamento entre os itens */
+}
+
+.menu__list__item a {
+    text-decoration: none; /* Remover sublinhado */
+    color: #ffffff; /* Cor branca */
+    background-color: #6f42c1; /* Cor de fundo roxa */
+    border-radius: 10px; /* Borda arredondada */
+    padding: 10px 20px; /* Espaçamento interno */
+    align-items: center;
+    margin: -10px 1px 50px -40px; /* Margem de 300px em ambos os lados */
+}
+
+/* Imagem Analie */
+.title__div {
+    display: flexbox;
+    text-align: center; 
+    margin: -40px -10px 50px -10px; /* Margem de 300px em ambos os lados */
+}
+
+
+/*Sessão Title*/
+
+section.title{
+    display: flexbox;
+    align-items: center;
+    margin: -10px -10px 50px -10px; /* Margem de 300px em ambos os lados */
+}
+
+/* Frase de efeito */
+.title__bio {
+    font-size: 30px; /* Tamanho da fonte do título */
+    margin: 0px 300px -5px 300px; /* Ajusta a margem superior */
+    color: #ffffff;
+}
+
+/* Descrição da Frase de efeito */
+.title__subsection {
+    font-size: 18px; /* Tamanho da fonte do subtítulo */
+    margin: 30px 300px -5px 300px; /* Ajusta a margem superior */
+    color: #ffffff;
+}
+
+/* DLinks redes sociais */
+.title__network {
+    display: flex; /* Faz com que os itens da rede sejam exibidos em linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center;
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0;
+}
+
+.title__network__item {
+    background-color: #1f1e24; /* Cor de fundo */
+    border: 1px solid white; /* Adiciona borda branca */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 10px;
+    margin-top: 60px;
+    margin-right: 50px; /* Aumenta o espaço entre os itens da rede */
+    display: flex;
+    align-items: justify;
+}
+
+.title__network__icon {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    align-items: center;
+}
+
+.title__network__item span {
+    color: #ffffff; /* Cor do texto */
+}
+
+.title__profile {
+    align-items: center;
+    width: 30%; 
+    max-width: 100%;
+    height: auto; 
+}
+
+/* Sobre mim */
+
+/*Sessão About*/
+
+section.about{
+    display: flexbox;
+    align-items: center;
+    margin: 0px 5px 0px 5px; /* Ajusta a margem superior */
+}
+
+.about__container {
+    color: white; /* Cor do texto */
+    text-align: justify; /* Texto justificado */
+    margin: 0 300px; /* Margem de 300px em ambos os lados */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5; /* Espaçamento entre as linhas */
+}
+
+.about__paragraph {
+    margin-bottom: 20px; /* Espaçamento entre os parágrafos */
+}
+
+.about__title {
+    text-align: left; /* Alinhamento do texto à esquerda */
+    margin-top: 40px; /* Remover margem superior padrão */
+    text-indent: -375px; /* Recuo do texto para alinhamento com a primeira linha do parágrafo */
+    text-shadow: 2px 2px #6f42c1; /* Adiciona sombra roxa */
+}
+
+
+body {
+    box-sizing: border-box;
+    background-color:#1f1e24;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    align-items: first baseline;
+
+}
+
+
+/* Skills */
+.skills__title {
+    display: flexbox;
+    margin: -10px 200px -10px 300px; /* Ajusta a margem superior */
+    text-decoration: none; /* Sublinhado */
+    color: #ffffff;
+    text-align: left; /* Alinhamento do texto à esquerda */
+    text-indent: -550px; /* Recuo do texto para alinhamento com a primeira linha do parágrafo */
+    text-shadow: 2px 2px #6f42c1; /* Adiciona sombra roxa */
+    margin-top: 10%;
+    height: 100%;
+}
+
+.skills__line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    margin: 0 -300px; /* Adiciona uma margem lateral de 300px */
+    
+}
+
+.skills__box {
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 0 15px; /* Espaçamento entre as caixas */
+}
+
+.skills__img img {
+    width: 130px;
+    height: auto;
+}
+
+.skills__name {
+    color: white;
+    font-weight: bold;
+    list-style: none; /* Remove marcadores de lista */
+}
+
+.skills {
+    margin-left: 550px; /* Margem à esquerda */
+    margin-right: 550px; /* Margem à direita */
+}
+
+/* Hobbies */
+/*Sessão Hobbies*/
+
+section.hobbies{
+    display: flexbox;
+    align-items: center;
+    
+}
+
+.hobbies__title {
+    text-decoration: none; /* Sublinhado */
+    color: #ffffff;
+    text-align: left; /* Alinhamento do texto à esquerda */
+    text-indent: -375px; /* Recuo do texto para alinhamento com a primeira linha do parágrafo */
+    text-shadow: 2px 2px #6f42c1; /* Adiciona sombra roxa */
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-size-adjust: 10px;
+}
+.hobbies__line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    margin: 0 -300px; /* Adiciona uma margem lateral de 300px */
+}
+
+.hobbies__box {
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 0 15px; /* Espaçamento entre as caixas */
+}
+
+.hobbies__img img {
+    width: 130px;
+    height: auto;
+}
+
+.hobbies__name {
+    color: white;
+    font-weight: bold;
+    list-style: none; /* Remove marcadores de lista */
+}
+
+.hobbies {
+    margin-left: 550px; /* Margem à esquerda */
+    margin-right: 550px; /* Margem à direita */
+}
+
+/* Experiência Acadêmica */
+section.academic {
+    color: white;
+    text-align: justify; /* Texto justificado */
+    margin: 0 300px; /* Margem de 300px em ambos os lados */
+    display: flex;
+    flex-direction: column;
+    line-height: 1; /* Espaçamento entre as linhas */
+}
+
+.academic__title {
+    text-decoration: none; /* Sublinhado */
+    color: #ffffff;
+    text-shadow: 2px 2px #6f42c1; /* Adiciona sombra roxa */
+    margin-top: 10%;
+}
+
+.academic__courses {
+    display: flex;
+    justify-content: space-between; /* Espaço entre os elementos */
+    margin-top: 20px; /* Espaço entre o título e os itens */
+}
+
+.academic__courses__box {
+    width: 45%; /* Largura dos itens */
+}
+
+.academic__courses__item {
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+    background: linear-gradient(to right, #190430, #290d3f); /* Gradiente roxo */
+    border-radius: 20px; /* Borda arredondada */
+    padding: 5px 5px; /* Espaçamento interno */
+    text-align: center; /* Alinhar o texto ao centro */
+}
+
+.academic__courses__item__title {
+    font-size: 18px; /* Tamanho da fonte maior */
+}
+
+.academic__courses__item__subtitle {
+    font-size: 16px; /* Tamanho da fonte menor */
+}
+
+.academic__courses__list {
+    list-style-type: none; /* Remover símbolo de lista */
+}
+
+
+/* Cursos e Especializações */
+section.cursos {
+    color: white;
+    text-align: justify; /* Texto justificado */
+    margin: 0 300px; /* Margem de 300px em ambos os lados */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinhar os itens à esquerda */
+}
+
+.cursos__title {
+    text-decoration: none; /* Sublinhado */
+    color: #ffffff;
+    text-shadow: 2px 2px #6f42c1; /* Adiciona sombra roxa */
+    margin-top: 10%; /* Margem superior */
+}
+
+.cursos__list {
+    padding: 0; /* Remover o preenchimento padrão */
+}
+
+.cursos__item {
+    text-decoration: none; /* Remover sublinhado */
+    color: #ffffff; /* Cor branca */
+    margin-top: 10px; /* Margem superior */
+    display: flex;
+    align-items: center; /* Alinhar verticalmente ao centro */
+}
+
+.cursos__item::before {
+    content: ""; /* Conteúdo vazio */
+    display: inline-block; /* Exibido como bloco em linha */
+    width: 10px; /* Largura do marcador */
+    height: 10px; /* Altura do marcador */
+    background-color: transparent; /* Cor do marcador transparente */
+    border: 1px solid #ffffff; /* Borda do marcador */
+    border-radius: 50%; /* Borda circular */
+    margin-right: 10px; /* Margem à direita para separar o marcador do texto */
+}
+
+/* experiência */
+section.experience {
+    display: flexbox;
+    align-items: center;
+    color: #ffffff;
+    text-align: justify; /* Texto justificado */
+    margin: 0 300px; /* Margem de 300px em ambos os lados */
+}
+
+.experience__section__title {
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+    background: linear-gradient(to right, #190430, #290d3f); /* Gradiente roxo */
+    border-radius: 20px; /* Borda arredondada */
+    padding: 5px 5px; /* Espaçamento interno */
+    text-align: center; /* Alinhar o texto ao centro */
+}
+
+.experience__text {
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    margin-bottom: 0; /* Remover espaço inferior */
+    
+}
+
+.experience__title {
+    font-size: 15px; /* Tamanho da fonte */
+    margin-bottom: 5px; /* Reduzir espaço inferior */
+    font-weight: normal; /* Normalizar peso da fonte */
+    
+}
+
+.experience__description {
+    text-decoration: none; /* Remover sublinhado */
+    color: #ffffff; /* Cor branca */
+    text-align: left; /* Alinhamento do texto à esquerda */
+    margin-top: 0.1cm;
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
+
+/* Contato */
+section.formcontato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: justify; /* Texto justificado */
+    margin: 0 300px; /* Margem de 300px em ambos os lados */
+}
+
+.formcontato__title {
+    font-size: 30px; /* Tamanho da fonte */
+    margin-bottom: 5px; /* Reduzir espaço inferior */
+    font-weight: bold; /* Normalizar peso da fonte */
+    text-decoration: none; /* Sublinhado */
+    color: #ffffff;
+    text-shadow: 2px 2px #6f42c1; /* Adiciona sombra roxa */
+    margin-top: 0%; /* Margem superior */
+}
+.formcontato__text {
+    color: white;
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    background-color: rgba(33, 19, 58, 0.7); /* Cor de fundo roxa */
+    color: white; /* Cor do texto branco */
+    font-weight: normal; /* Negrito */
+}
+
+.formcontato__textarea {
+    font-weight: bold; /* negrito */
+}
+
+.formcontato__botao {
+    background: linear-gradient(to right, #6f42c1, #5a308e); /* Degradê roxo */
+    text-shadow: -6px 2px 5px rgba(103, 58, 183, 0.7); /* Sombra do texto */
+    color: white; /* Cor do texto branco */
+    font-weight: bold; /* Negrito */
+}
+
+.formcontato__input,
+.formcontato__textarea,
+.formcontato__botao {
+    margin: 10px 0; /* Espaçamento vertical */
+    width: 100%; /* Largura total */
+}
+
+.formcontato__botao {
+    padding: 10px 0; /* Preenchimento interno */
+    cursor: pointer; /* Alterar cursor ao passar sobre o botão */
+}
+
+/*footeer*/
+
+section.footer{
+    display: flexbox;
+    text-align: center; /* Alinhar o texto ao centro */
+    color: white; /* Cor do texto branco */
+    font-size: 15px; /* Tamanho da fonte */
+    margin-bottom: 5px; /* Reduzir espaço inferior */
+}
+
